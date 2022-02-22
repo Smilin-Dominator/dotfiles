@@ -34,6 +34,24 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 # Install the nVim plugins
 nvim +PluginInstall +qall
 
+# Install My Favourite Fonts
+IOSEVKA=/tmp/iosevka.zip
+JETBRAINS=/tmp/jb.zip
+GO=/tmp/go.zip
+mkdir -p ~/.fonts
+
+wget -O "$IOSEVKA" "https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Iosevka.zip" 
+wget -O "$JETBRAINS" "https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/JetBrainsMono.zip"
+wget -O "$GO" "https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Go-Mono.zip"
+
+unzip "$IOSEVKA" ~/.fonts
+unzip "$JETBRAINS" ~/.fonts
+unzip "$GO" ~/.fonts
+
+rm "$GO"
+rm "$JETBRAINS"
+rm "$IOSEVKA"
+
 # Install the Node Modules needed for NVim
 sudo npm i -g typescript-language-server gopls pyright clangd dockerfile-language-server-nodejs bash-language-server @angular/language-service@next typescript @angular/language-server
 
