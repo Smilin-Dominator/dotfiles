@@ -52,6 +52,8 @@ rm "$GO"
 rm "$JETBRAINS"
 rm "$IOSEVKA"
 
+fc-cache -fv
+
 # Install the Node Modules needed for NVim
 sudo npm i -g typescript-language-server gopls pyright clangd dockerfile-language-server-nodejs bash-language-server @angular/language-service@next typescript @angular/language-server
 
