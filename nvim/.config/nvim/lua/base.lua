@@ -23,3 +23,12 @@ vim.opt.backspace = 'start,eol,indent'
 
 -- Ignore
 vim.opt.wildignore:append { '*/node_modules/*' }
+
+-- Indentation
+vim.api.nvim_command([[
+				augroup FileTypeSpecificAutocommands
+								autocmd FileType typescript setlocal tabstop=2 softtabstop=2 shiftwidth=2
+								autocmd FileType typescriptreact setlocal tabstop=2 softtabstop=2 shiftwidth=2
+								autocmd FileType javascript setlocal tabstop=2 softtabstop=2 shiftwidth=2
+				augroup END
+]])
