@@ -1,0 +1,12 @@
+[user]
+	name = Devisha Padmaperuma
+	email = devisha.padmaperuma@gmail.com
+	signingkey = 64AEA82E11F45456137AF0784022B747DC773A07
+[color]
+	ui = auto
+[core]
+	editor = /usr/bin/nvim
+[commit]
+	gpgSign = true
+[gpg]
+	program = /usr/bin/gpg
