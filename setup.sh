@@ -15,6 +15,14 @@ nix-env -iA nixpkgs.git nixpkgs.python310 nixpkgs.jdk nixpkgs.go nixpkgs.flutter
 stow nvim
 stow git
 stow zsh
+stow alacritty 
+stow btop
+stow i3
+stow neofetch
+stow nitrogen
+stow picom
+stow rofi
+stow volumeicon
 
 # Make conda not activate base by default
 conda config --set auto_activate_base false
