@@ -8,5 +8,7 @@
 	editor = /usr/bin/nvim
 [commit]
 	gpgSign = true
+[init]
+  defaultBranch = main
 [gpg]
 	program = /usr/bin/gpg
