@@ -17,7 +17,7 @@ packer.startup(function (use)
 		use 'hoob3rt/lualine.nvim'
 		use 'kyazdani42/nvim-web-devicons'
 		use 'akinsho/nvim-bufferline.lua'
-    use 'pineapplegiant/spaceduck'
+    use 'folke/tokyonight.nvim'
 
 		-- Syntax Highlighting
 		use 'nvim-treesitter/nvim-treesitter'
