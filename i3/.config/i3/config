@@ -199,8 +199,3 @@ bar {
         status_command i3status
 }
 
-# Final Stage
-
-# Starting 1Password and SynologyDrive
-exec --no-startup-id synology-drive 
-# exec --no-startup-id 1password
