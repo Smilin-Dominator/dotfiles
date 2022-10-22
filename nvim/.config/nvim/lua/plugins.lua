@@ -10,8 +10,8 @@ packer.startup(function (use)
 
 		-- Managers
 		use 'wbthomason/packer.nvim'
-    use 'williamboman/mason.nvim' 
-    use 'williamboman/mason-lspconfig.nvim' 
+    use 'williamboman/mason.nvim'
+    use 'williamboman/mason-lspconfig.nvim'
 
 		-- UI
 		use 'hoob3rt/lualine.nvim'
@@ -21,6 +21,7 @@ packer.startup(function (use)
 
 		-- Syntax Highlighting
 		use 'nvim-treesitter/nvim-treesitter'
+		use 'p00f/nvim-ts-rainbow'
 
 		-- Editing
 		use 'windwp/nvim-ts-autotag' -- html tags
@@ -31,15 +32,6 @@ packer.startup(function (use)
 								require('Comment').setup()
 								end
     }
-
-		-- Fuzzy Finder
-		use {
-			'nvim-telescope/telescope.nvim',
-			requires = { 
-				{'nvim-lua/plenary.nvim'},
-			 }
-		}
-		use "nvim-telescope/telescope-file-browser.nvim"
 
 		-- LSP
 	  use "neovim/nvim-lspconfig"

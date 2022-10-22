@@ -18,12 +18,20 @@ ts.setup {
     "yaml",
     "css",
     "html",
-    "lua"
+    "lua",
+		"python",
+		"haskell",
+		"go",
+		"java",
+		"scala",
+		"dockerfile",
   },
+	rainbow = {
+		enable = true,
+		extended_mode = true
+	},
   autotag = {
     enable = true,
   },
 }
 
-local parser_config = require "nvim-treesitter.parsers".get_parser_configs()
-parser_config.tsx.filetype_to_parsername = { "javascript", "typescript.tsx" }
