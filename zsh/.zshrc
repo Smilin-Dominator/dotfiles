@@ -5,15 +5,9 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-# Source nix
-if [ -e ~/.nix-profile/etc/profile.d/nix.sh ]; then 
-	. ~/.nix-profile/etc/profile.d/nix.sh;
-fi
-
 # Aliases
 alias ls="exa"
 alias ll="exa -la --git"
-alias vim="nvim"
 
 # Source Plugins
 source ~/.zsh_plugins.sh
