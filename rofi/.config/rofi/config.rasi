@@ -5,8 +5,8 @@ configuration {
 /*	yoffset: 0;*/
 /*	xoffset: 0;*/
 /*	fixed-num-lines: true;*/
-/*	show-icons: false;*/
-/*	terminal: "rofi-sensible-terminal";*/
+  show-icons: true;
+  terminal: "alacritty";
 /*	ssh-client: "ssh";*/
 /*	ssh-command: "{terminal} -e {ssh-client} {host} [-p {port}]";*/
 /*	run-command: "{cmd}";*/
@@ -19,7 +19,7 @@ configuration {
 /*	drun-categories: ;*/
 /*	drun-show-actions: false;*/
 /*	drun-display-format: "{name} [<span weight='light' size='small'><i>({generic})</i></span>]";*/
-	drun-url-launcher: "brave";
+	drun-url-launcher: "firefox";
 /*	disable-history: false;*/
 /*	ignored-prefixes: "";*/
 /*	sort: false;*/
