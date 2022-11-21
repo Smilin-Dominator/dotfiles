@@ -13,6 +13,7 @@ vim.opt.clipboard = 'unnamedplus'
 
 -- General
 vim.wo.number = true
+vim.wo.rnu = true
 vim.opt.title = true
 vim.opt.autoindent = true
 vim.opt.backup = false
