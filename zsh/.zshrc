@@ -9,6 +9,9 @@ fi
 alias ls="exa"
 alias ll="exa -la --git"
 
+# Variables
+export EDITOR="nvim"
+
 # Source Plugins
 source ~/.zsh_plugins.sh
 
