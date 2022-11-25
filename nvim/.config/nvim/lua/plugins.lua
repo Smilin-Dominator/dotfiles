@@ -18,6 +18,13 @@ packer.startup(function (use)
     use 'kyazdani42/nvim-web-devicons'
     use 'akinsho/nvim-bufferline.lua'
     use 'folke/tokyonight.nvim'
+    use {
+      "nvim-telescope/telescope-file-browser.nvim", -- File browser
+      requires = {
+        { 'nvim-lua/plenary.nvim' }, -- Lua utils
+        { 'nvim-telescope/telescope.nvim' } -- The fuzzy finder
+      }
+    }
 
     -- Syntax Highlighting
     use 'nvim-treesitter/nvim-treesitter'
