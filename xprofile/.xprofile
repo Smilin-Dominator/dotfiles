@@ -1,0 +1,17 @@
+# Immediate UI
+nitrogen --restore & # Wallpapers
+picom & # Compositor
+dunst & # Notification Daemon
+
+# Daemons (High Priority)
+gnome-keyring-daemon --start & # Gnome Keyring
+mullvad-vpn & # Mullvad VPN (inc. Applet)
+
+# Applets
+nm-applet & # Network Manager (req. gnome-keyring-daemon)
+blueman-applet & # Bluetooth Manager
+volumeicon & # Volume Icon
+
+# Daemons (Low Priority)
+synology-drive & # Synology's Drive Client (inc. Applet)
+
