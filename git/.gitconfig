@@ -1,14 +1,16 @@
 [user]
 	name = Devisha Padmaperuma
 	email = devisha.padmaperuma@gmail.com
-	signingkey = 64AEA82E11F45456137AF0784022B747DC773A07
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICEl/1EotKNy2CtItiaY6qEm198RI41XOsiX7BzlgIO/
 [color]
 	ui = auto
 [core]
-	editor = /usr/bin/nvim
-[commit]
-	gpgSign = true
+	editor = nvim
 [init]
-  defaultBranch = main
+  	defaultBranch = main
 [gpg]
-	program = /usr/bin/gpg
+	format = ssh
+[gpg "ssh"]
+	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+[commit]
+	gpgsign = true
