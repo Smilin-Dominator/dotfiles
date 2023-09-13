@@ -12,8 +12,8 @@ lspconfig.setup({});
 local status3, nvim_lsp = pcall(require, "lspconfig" )
 if (not status3) then return end
 
-nvim_lsp.tsserver.setup({}); -- TypeScript
-nvim_lsp.sumneko_lua.setup({}); -- Lua
+nvim_lsp.lua_ls.setup({}); -- Lua
 nvim_lsp.pyright.setup({}); -- Python
 nvim_lsp.hls.setup({}); -- Haskell
+nvim_lsp.nixd.setup({}); -- Nix
 
