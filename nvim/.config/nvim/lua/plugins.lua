@@ -17,7 +17,7 @@ packer.startup(function (use)
     use 'hoob3rt/lualine.nvim'
     use 'kyazdani42/nvim-web-devicons'
     use 'akinsho/nvim-bufferline.lua'
-    use 'folke/tokyonight.nvim'
+    use { "catppuccin/nvim", as = "catppuccin" }
     use {
       "nvim-telescope/telescope-file-browser.nvim", -- File browser
       requires = {
@@ -50,6 +50,9 @@ packer.startup(function (use)
     use 'hrsh7th/nvim-cmp'
     use 'hrsh7th/cmp-nvim-lsp'
     use 'hrsh7th/cmp-buffer'
+
+    -- Tex Compilers
+    use 'lervag/vimtex'
 
 end)
 

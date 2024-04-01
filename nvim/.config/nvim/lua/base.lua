@@ -1,7 +1,7 @@
 vim.cmd('autocmd!')
 
 -- Theme
-vim.cmd('colorscheme tokyonight')
+vim.cmd('colorscheme catppuccin-macchiato')
 vim.cmd('hi Normal guibg=NONE ctermbg=NONE') -- transparent
 
 -- Encoding
@@ -33,4 +33,7 @@ vim.opt.backspace = 'start,eol,indent'
 
 -- Ignore
 vim.opt.wildignore:append { '*/node_modules/*' }
+
+-- Vim Tex
+vim.cmd("let g:vimtex_view_method = 'zathura'")
 

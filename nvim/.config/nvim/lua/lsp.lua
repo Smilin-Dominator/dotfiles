@@ -16,4 +16,5 @@ nvim_lsp.lua_ls.setup({}); -- Lua
 nvim_lsp.pyright.setup({}); -- Python
 nvim_lsp.hls.setup({}); -- Haskell
 nvim_lsp.nixd.setup({}); -- Nix
+nvim_lsp.texlab.setup({}); -- LaTeX
 
