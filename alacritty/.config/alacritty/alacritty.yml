@@ -8,8 +8,8 @@
 #
 # All imports must either be absolute paths starting with `/`, or paths relative
 # to the user's home directory starting with `~/`.
-#import:
-#  - /path/to/alacritty.yml
+import: 
+- ~/.config/alacritty/catppuccin-macchiato.yml
 
 # Any items in the `env` entry below will be added as
 # environment variables. Some entries may override variables
@@ -68,7 +68,7 @@ window:
   #
   # Window opacity as a floating point number from `0.0` to `1.0`.
   # The value `0.0` is completely transparent and `1.0` is opaque.
-  opacity: 0.7
+  opacity: 1
 
   # Startup Mode (changes require restart)
   #
@@ -119,7 +119,7 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    family: Monoid NF
+    family: Iosevka Term NF
 
     # The `style` can be specified to pick a specific face.
     style: Regular
@@ -158,7 +158,7 @@ font:
     #style: Bold Italic
 
   # Point size
-  size: 10.0
+  size: 13.6
 
   # Offset is the extra space around each character. `offset.y` can be thought
   # of as modifying the line spacing, and `offset.x` as modifying the letter
@@ -438,8 +438,8 @@ font:
 # Default:
 #   - (Linux/BSD/macOS) `$SHELL` or the user's login shell, if `$SHELL` is unset
 #   - (Windows) powershell
-#shell:
-#  program: /bin/bash
+shell:
+  program: /bin/zsh
 #  args:
 #    - --login
 
