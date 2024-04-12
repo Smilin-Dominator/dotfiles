@@ -1,0 +1,91 @@
+{
+    "layer": "top",
+    "position": "top",
+    "spacing": 0,
+    "height": 40,
+    "modules-left": [
+        "hyprland/workspaces"
+    ],
+    "modules-center": [
+        "custom/logo"
+    ],
+    "modules-right": [
+        "pulseaudio",
+        "cpu",
+        "custom/gpu-usage",
+        "memory",
+        "network",
+        "clock"
+    ],
+    "hyprland/workspaces": {
+        "on-click": "activate",
+        "format": "{icon}",
+        "format-icons": {
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9"
+        },
+        "persistent_workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": [],
+            "5": []
+        }
+    },
+    "memory": {
+        "interval": 5,
+        "format": "RAM {}%",
+        "max-length": 10
+    },
+    "cpu": {
+        "interval": 5,
+        "format": "CPU {}%",
+        "max-length": 10
+    },
+    "network": {
+        "interface": "eno2",
+        "format": "{ifname}",
+        "format-wifi": "{essid} ({signalStrength}%) ",
+        "format-ethernet": "{ipaddr}/{cidr} @ {bandwidthTotalBytes}",
+        "format-disconnected": "",
+        "tooltip-format": "{ifname} via {gwaddr} 󰊗",
+        "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
+        "tooltip-format-ethernet": "{ifname} ",
+        "tooltip-format-disconnected": "Disconnected",
+        "interval": 5,
+        "max-length": 50
+    },
+    "clock": {
+      "format": "{:%A, %B %d, %Y (%R)}  ",
+      "format-alt": "{:%H:%M}"
+    },
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-bluetooth": "󰂰",
+        "nospacing": 1,
+        "tooltip-format": "Volume : {volume}%",
+        "format-muted": "󰝟",
+        "format-icons": {
+            "headphone": "",
+            "default": ["󰖀","󰕾",""]
+        },
+        "on-click": "pamixer -t",
+        "scroll-step": 1
+    },
+    "custom/logo": {
+        "format": "Devisha's Workstation",
+        "tooltip": false
+    },
+    "custom/gpu-usage": {
+      "exec": "nvidia-smi --query-gpu=utilization.gpu --format=csv,noheader,nounits",
+      "format": "GPU {}%",
+      "interval": 5
+    }
+}
