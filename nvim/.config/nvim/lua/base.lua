@@ -1,8 +1,8 @@
 vim.cmd('autocmd!')
 
 -- Theme
-vim.cmd('colorscheme catppuccin-macchiato')
 vim.cmd('hi Normal guibg=NONE ctermbg=NONE') -- transparent
+vim.cmd('colorscheme 2077') -- Colour Scheme 
 
 -- Encoding
 vim.scriptencoding = 'utf-8'

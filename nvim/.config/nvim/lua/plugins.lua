@@ -17,7 +17,7 @@ packer.startup(function (use)
     use 'hoob3rt/lualine.nvim'
     use 'kyazdani42/nvim-web-devicons'
     use 'akinsho/nvim-bufferline.lua'
-    use { "catppuccin/nvim", as = "catppuccin" }
+    use 'akai54/2077.nvim' -- Theme
     use {
       "nvim-telescope/telescope-file-browser.nvim", -- File browser
       requires = {

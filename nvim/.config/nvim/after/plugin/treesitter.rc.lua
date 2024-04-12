@@ -17,6 +17,9 @@ ts.setup {
     "lua",
 		"python",
 		"haskell",
+    "typescript",
+    "kotlin",
+    "java"
   },
 	rainbow = {
 		enable = true,
